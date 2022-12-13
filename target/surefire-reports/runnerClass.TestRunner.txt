@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: runnerClass.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.659 s <<< FAILURE! - in runnerClass.TestRunner
+runnerClass.TestRunner.initializationError  Time elapsed: 0.012 s  <<< ERROR!
+gherkin.TagExpression$BadTagException: Bad tag: "not@Vishal"
+	at gherkin.TagExpression$TagExp.<init>(TagExpression.java:122)
+	at gherkin.TagExpression.add(TagExpression.java:57)
+	at gherkin.TagExpression.<init>(TagExpression.java:17)
+	at gherkin.formatter.TagFilter.<init>(TagFilter.java:14)
+	at gherkin.formatter.FilterFormatter.detectFilter(FilterFormatter.java:64)
+	at gherkin.formatter.FilterFormatter.<init>(FilterFormatter.java:41)
+	at cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:126)
+	at cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:104)
+	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:54)
+	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:34)
+	at cucumber.runtime.RuntimeOptions.cucumberFeatures(RuntimeOptions.java:239)
+	at cucumber.api.junit.Cucumber.<init>(Cucumber.java:62)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:374)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+
